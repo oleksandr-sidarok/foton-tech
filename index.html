@@ -9,33 +9,33 @@
 <body>
 	<header>
 		<div>
-			<a href="#">
+			<a href="#" class="logo">
 				<img src="./img/logo.png" alt="logo foton-tech">
 			</a>
-			<nav>
-				<ul>
-					<li>
-						<a href="./index.html">
+			<nav class="nav header-nav">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="./index.html" class="nav-link">
 							Strona główna
 						</a>
 					</li>
-					<li>
-						<a href="./onas.html">
+					<li class="nav-item">
+						<a href="./onas.html" class="nav-link">
 							O nas
 						</a>
 					</li>
-					<li>
-						<a href="./projekty.html">
+					<li class="nav-item">
+						<a href="./projekty.html" class="nav-link">
 							Projekty
 						</a>
 					</li>
-					<li>
-						<a href="./instalacja.html">
+					<li class="nav-item">
+						<a href="./instalacja.html" class="nav-link">
 							Instalacja
 						</a>
 					</li>
-					<li>
-						<a href="./kontakt.html">
+					<li class="nav-item">
+						<a href="./kontakt.html" class="nav-link">
 							Kontakt
 						</a>
 					</li>
@@ -51,108 +51,108 @@
 		</div>
 	</header>
 	<main>
-		<section>
-			<h1>Panele Fotowoltaiczne</h1>
-			<p>Kompleksowe usługi w zakresie montażu i podłączenia paneli słonecznych.</p>
-			<button>Obliczyć koszt</button>
+		<section class="intro">
+			<h1 class="intro-title">Panele Fotowoltaiczne</h1>
+			<p class="intro-text">Kompleksowe usługi w zakresie montażu i podłączenia paneli słonecznych.</p>
+			<button class="btn btn--primary">Obliczyć koszt</button>
 		</section>
-		<section>
-			<div>
+		<section class="desc">
+			<div class="desc-photo">
 				<img src="./img/house_with_panels1.jpg" alt="photo house with panels">
 			</div>
-			<div>
-				<h2>Ty i twói dom</h2>
-				<p>Zrównoważony rozwój zaczyna się w domu od Ciebie i Twojej rodziny. Codzienne dokonywane przez ciebie wybory - zarówno duże, jak i małe mają ogromny wpływ na środowisko.</p>
-				<p>To wspaniała wiadomość, ponieważ każdy z nas ma moc wpływania na pozytywne zmiany.</p>
-				<p>Wszyscy jesteśmy odpowiedzialni za stworzenie zrównoważonego świata i istnieje tak wiele sposobów, aby to zrobić.</p>
+			<div class="desc-content">
+				<h2 class="desc-title">Ty i twói dom</h2>
+				<p class="desc-text">Zrównoważony rozwój zaczyna się w domu od Ciebie i Twojej rodziny. Codzienne dokonywane przez ciebie wybory - zarówno duże, jak i małe mają ogromny wpływ na środowisko.</p>
+				<p class="desc-text">To wspaniała wiadomość, ponieważ każdy z nas ma moc wpływania na pozytywne zmiany.</p>
+				<p class="desc-text">Wszyscy jesteśmy odpowiedzialni za stworzenie zrównoważonego świata i istnieje tak wiele sposobów, aby to zrobić.</p>
 			</div>
 		</section>
 	</main>
 	<footer>
 		<div>
-			<a href="#">
-				<img src="img/logo.png" alt="logo foton-tech">
+			<a href="#" class="logo">
+				<img src="./img/logo.png" alt="logo foton-tech">
 			</a>
-			<nav>
-				<ul>
-					<li>
-						<a href="./index.html">
+			<nav class="nav footer-nav">
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="./index.html" class="nav-link">
 							Strona główna
 						</a>
 					</li>
-					<li>
-						<a href="./onas.html">
+					<li class="nav-item">
+						<a href="./onas.html" class="nav-link">
 							O nas
 						</a>
 					</li>
-					<li>
-						<a href="./projekty.html">
+					<li class="nav-item">
+						<a href="./projekty.html" class="nav-link">
 							Projekty
 						</a>
 					</li>
-					<li>
-						<a href="./instalacja.html">
+					<li class="nav-item">
+						<a href="./instalacja.html" class="nav-link">
 							Instalacja
 						</a>
 					</li>
-					<li>
-						<a href="./kontakt.html">
+					<li class="nav-item">
+						<a href="./kontakt.html" class="nav-link">
 							Kontakt
 						</a>
 					</li>
 				</ul>
 			</nav>
-			<a href="#">Oddzwoń</a>
+			<button class="btn footer-btn">Oddzwoń</button>
 		</div>
-		<div>
+		<div class="footer-copyright">
 			<span>Polityka prywatności</span>
 			<span>Ochrona danych osobowych</span>
 		</div>
 	</footer>
 
 	<!-- Modal windows -->
-	<div>
-		<!-- It is modal window 'Obliczyć koszt' -->
-		<div>
-			<h2>Obliczyć koszt</h2>
-			<p>Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
-			<form>
-				<span>
+	<div class="mask"></div>
+
+	<div class="modal calculate-the-cost">
+		<h2 class="modal-title">Obliczyć koszt</h2>
+		<p class="modal-text">Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
+		<form class="modal-form">
+			<div class="scroll-wraper">
+				<span class="scroll-desc">
 					Roczne zużycie energii elektrycznej
 				</span>
-				<span>
+				<span class="scroll-val">
 					42 200 kWh
 				</span>
-				<div>
+				<div class="scroll">
 					<!-- It is scroll -->
 				</div>
-				<div>
-					<label for="select1">
-						Strona świata
-					</label>
-					<select name="" id="select1">
-						<option value="Wybierz z listy">Wybierz z listy</option>
-					</select>
-				</div>
-				<div>
-					<label for="select2">
-						Materiał dachu
-					</label>
-					<select name="" id="select2">
-						<option value="Wybierz z listy">Wybierz z listy</option>
-						<option value="Południowy">Południowy</option>
-						<option value="Wschodni">Wschodni</option>
-						<option value="Zachodni">Zachodni</option>
-					</select>
-				</div>
-				<button type="submit">Obliczyć</button>
-			</form>
-		</div>
+			</div>
+			<div class="select-wraper">
+				<label for="select1" class="select-desc">
+					Strona świata
+				</label>
+				<select name="" id="select1" class="select">
+					<option value="Wybierz z listy">Wybierz z listy</option>
+				</select>
+			</div>
+			<div class="select-wraper">
+				<label for="select2">
+					Materiał dachu
+				</label>
+				<select name="" id="select2" class="select">
+					<option value="Wybierz z listy">Wybierz z listy</option>
+					<option value="Południowy">Południowy</option>
+					<option value="Wschodni">Wschodni</option>
+					<option value="Zachodni">Zachodni</option>
+				</select>
+			</div>
+			<button type="submit">Obliczyć</button>
+		</form>
 	</div>
-	<div>
-		<!-- It is modal window 'Jakieś pytania' -->
-		<div>
-			<div>
+	<div class="modal your-questions">
+		<div class="modal-header">
+			<div class="modal-price">
 				<span>
 					Przybliżony koszt:
 				</span>
@@ -160,55 +160,45 @@
 					40 000 zł
 				</span>
 			</div>
-			<div>
-				<button>Przeliczyć</button>
+			<button class="btn btn--secondary">Przeliczyć</button>
+		</div>
+		<h2 class="modal-title">Jakieś pytania?</h2>
+		<p>Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania</p>
+		<form action="" class="modal-form">
+			<div class="input-wraper">
+				<label for="input1" class="input-desc">Twoje imię</label>
+				<input type="text" id="input1" placeholder="Wprowadź swoje imię" class="input">
 			</div>
-		</div>
-		<div>
-			<h2>Jakieś pytania?</h2>
-			<p>Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania</p>
-			<form action="">
-				<div>
-					<label for="input1">Twoje imię</label>
-					<input type="text" id="input1" placeholder="Wprowadź swoje imię">
-				</div>
-				<div>
-					<label for="input2">E-mail</label>
-					<input type="text" id="input2" placeholder="Wprowadź mail">
-				</div>
-				<div>
-					<label for="input3">Telefon</label>
-					<input type="text" id="input3" placeholder="Wprowadź telefon">
-				</div>
-				<button type="submit">Wysłać prośbę</button>
-			</form>
-		</div>
+			<div class="input-wraper">
+				<label for="input2" class="input-desc">E-mail</label>
+				<input type="text" id="input2" placeholder="Wprowadź mail" class="input">
+			</div>
+			<div class="input-wraper">
+				<label for="input3" class="input-desc">Telefon</label>
+				<input type="text" id="input3" placeholder="Wprowadź telefon" class="input">
+			</div>
+			<button type="submit" class="btn btn--primary">Wysłać prośbę</button>
+		</form>
 	</div>
-	<div>
-		<!-- It is modal window 'Dziękuję za twoją prośbę' -->
-		<div>
-			<h2>Dziękuję za twoją prośbę</h2>
-			<span>Nasz menedżer wkrótce się z Tobą skontaktuje</span>
-			<button>Ok</button>
-		</div>
+	<div class="modal gratitude">
+		<h2 class="modal-title">Dziękuję za twoją prośbę</h2>
+		<span class="modal-text">Nasz menedżer wkrótce się z Tobą skontaktuje</span>
+		<button class="btn btn--secondary">Ok</button>
 	</div>
-	<div>
-		<!-- It is modal window 'Oddzwoń' -->
-		<div>
-			<h2>Oddzwoń</h2>
-			<p>Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
-			<form action="">
-				<div>
-					<label for="input1">Twoje imię</label>
-					<input type="text" id="input1" placeholder="Wprowadź swoje imię">
-				</div>
-				<div>
-					<label for="input3">Telefon</label>
-					<input type="text" id="input3" placeholder="Wprowadź telefon">
-				</div>
-				<button type="submit">Zadzwoń</button>
-			</form>
-		</div>
+	<div class="modal call-back-me">
+		<h2 class="modal-title">Oddzwoń</h2>
+		<p class="modal-text">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
+		<form action="">
+			<div class="input-wraper">
+				<label for="input1" class="input-desc">Twoje imię</label>
+				<input type="text" id="input1" placeholder="Wprowadź swoje imię" class="input">
+			</div>
+			<div class="input-wraper">
+				<label for="input3" class="input-desc">Telefon</label>
+				<input type="text" id="input3" placeholder="Wprowadź telefon" class="input">
+			</div>
+			<button type="submit" class="btn btn-primary">Zadzwoń</button>
+		</form>
 	</div>
 </body>
 </html>
