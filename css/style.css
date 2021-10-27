@@ -62,6 +62,34 @@ address {
   font-weight: 700;
 }
 
+.btn {
+  padding: 16px 47px;
+  font-size: 14px;
+  font-weight: 700px;
+  color: #fff;
+  box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+}
+
+.footer-btn {
+  padding: 16px 62px;
+  border: 1px solid #FF7129;
+  box-shadow: none;
+  /* What is it? */
+  filter: drop-shadow(0px 4px 28px rgba(255, 113, 41, 0.67));
+}
+
+.btn--primary {
+  background-color: #FF7129;
+}
+
+.btn--secondary {
+  background-color: #fff;
+  color: #FF7129;
+
+  /* Remove this style in future*/
+  border: 1px solid black;
+}
+
 .header-contacts {
   background-color: #20242D;
   color: #fff;
@@ -72,6 +100,14 @@ address {
   font-weight: 600;
 }
 
+.footer-nav {
+  color: #fff;
+}
+
 .nav-item:hover {
   color: #FF7129;
+}
+
+.footer {
+  background-color: #20242D;
 }
