@@ -104,6 +104,11 @@ address {
   padding: 10px 50px;
 }
 
+/* Logo */
+.logo img {
+  display: block;
+}
+
 /* Nav */
 .nav-list {
   display: flex;
