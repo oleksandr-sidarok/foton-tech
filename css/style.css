@@ -17,16 +17,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-h1 {
-  font-size: 92px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 48px;
-  font-weight: 700;
-}
-
 a {
   margin: 0;
   padding: 0;
@@ -60,6 +50,16 @@ button {
 
 address {
   font: inherit;
+}
+
+.main-title {
+  font-size: 92px;
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .header-contacts {
