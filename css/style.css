@@ -2,4 +2,76 @@ html {
   font-family: 'Gilroy';
   font-size: 16px;
   font-weight: 400;
+  color: #20242D;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 92px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font: inherit;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+address {
+  font: inherit;
+}
+
+.header-contacts {
+  background-color: #20242D;
+  color: #fff;
+}
+
+.header-nav {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-item:hover {
+  color: #FF7129;
 }
