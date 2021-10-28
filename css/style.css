@@ -229,6 +229,7 @@ address {
   background-image: url("/./img/bg1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   z-index: -1;
 }
 
