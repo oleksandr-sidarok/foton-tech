@@ -69,12 +69,14 @@ address {
   font-weight: 700;
 }
 
+/* Button */
 .btn {
   padding: 16px 47px;
   font-size: 14px;
   font-weight: 700px;
   color: #fff;
   box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+  transition: background-color 0.2s linear;
 }
 
 .footer-btn {
@@ -85,8 +87,18 @@ address {
   filter: drop-shadow(0px 4px 28px rgba(255, 113, 41, 0.67));
 }
 
+.footer-btn:hover {
+  background-color: #fff;
+  opacity: 0.9;
+  color: #20242D;
+}
+
 .btn--primary {
   background-color: #FF7129;
+}
+
+.btn--primary:hover {
+  background-color: #D35E22;
 }
 
 .btn--secondary {
@@ -95,6 +107,11 @@ address {
 
   /* Remove this style in future*/
   border: 1px solid black;
+}
+
+.btn--secondary:hover {
+  background-color: #20242D;
+  color: #fff;
 }
 
 .header-inner, .footer-inner {
