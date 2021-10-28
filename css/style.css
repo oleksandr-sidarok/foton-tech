@@ -141,6 +141,10 @@ address {
   color: #FF7129;
 }
 
+.nav-link {
+  padding: 10px;
+}
+
 /* Contacts block */
 .contacts {
   display: flex;
