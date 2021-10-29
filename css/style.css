@@ -340,10 +340,6 @@ address {
 }
 
 /* Desc */
-.desc {
-}
-
-
 .desc-inner {
   position: relative;
   display: flex;
