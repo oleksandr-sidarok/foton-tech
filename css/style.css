@@ -390,3 +390,18 @@ address {
 .footer {
   background-color: #20242D;
 }
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 58px;
+  padding-bottom: 52px;
+  border-bottom: solid 1px #7B7E8530;
+}
+
+.footer-copyright {
+  padding: 24px 50px;
+  color: #7B7E85;
+  display: flex;
+  justify-content: space-between;
+}
