@@ -101,10 +101,11 @@ address {
   display: block;
   padding: 16px 47px;
   font-size: 14px;
-  font-weight: 700px;
+  font-weight: 700;
   color: #fff;
   box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
   transition: background-color 0.2s linear;
+  min-width: 185px;
 }
 
 .footer-btn {
@@ -493,6 +494,23 @@ address {
   background-position: center;
 }
 
+.call-back-me .btn {
+  margin-top: 20px;
+}
+
+.call-back-me::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 32px;
+  width: 475px;
+  height: 120px;
+  background-image: url("../img/text-callback.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
 .modal-close {
   position: absolute;
   top: 20px;
@@ -577,7 +595,7 @@ address {
 
 .input-wraper {
   position: relative;
-  width: 49%;
+  width: 48%;
   margin-bottom: 24px;
 }
 
