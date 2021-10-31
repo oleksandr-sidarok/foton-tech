@@ -369,16 +369,89 @@ address {
   margin-bottom: 60px;
 }
 
+.about {
+  padding: 200px 200px 100px;
+  position: relative;
+  color: #fff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  z-index: 3;
+}
+
+.about:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.about:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 36, 45, 0.3);
+  background-image: radial-gradient(50% 179.69% at 50% 50%, rgba(32, 36, 45, 0) 0%, #20242D 100%);
+  opacity: 0.9;
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
+
+.about-title {
+  position: relative;
+}
+
+.about-title::before {
+  content: "";
+  position: absolute;
+  top: -68px;
+  left: -44px;
+  display: block;
+  width: 320px;
+  height: 120px;
+  background-image: url("../img/text-about.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
 /* Desc */
 .desc-inner {
   position: relative;
   display: flex;
+  justify-content: space-between;
   padding-top: 132px;
   padding-bottom: 115px;
   justify-content: center;
-  border-left: solid 1px #7b7e8515;
-  border-right: solid 1px #7b7e8515;
+  /* border-left: solid 1px #7b7e8515;
+  border-right: solid 1px #7b7e8515; */
 }
+
+.desc-inner--about {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 180px;
+}
+
+/* .desc-inner--about::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  border-left: solid 1px #7b7e8515;
+} */
 
 .desc-inner:before {
   content: "";
@@ -395,8 +468,16 @@ address {
 }
 
 .desc-content {
-  margin-left: 64px;
+  width: 50%;
   padding-top: 69px;
+}
+
+.desc-inner--about .desc-content {
+  margin-right: 64px;
+}
+
+.desc-photo {
+  margin-right: 64px;
 }
 
 .desc-title {
