@@ -54,18 +54,34 @@
 		</div>
 	</header>
   <main>
-    <section>
-      <h1>Projekty</h1>
-      <!-- it should be a slider -->
-      <div class="slider">
-        <div>
-          <img src="./img/house_with_panels3.jpg" alt="photo house with solar panels">
-          <img src="./img/house_with_panels3.jpg" alt="photo house with solar panels">
-          <img src="./img/house_with_panels3.jpg" alt="photo house with solar panels">
-        </div>
-        <button class="next">btn</button>
-        <button class="prev">btn</button>
-      </div>
+    <section class="projects">
+      <div class="container projects-inner">
+				<h1 class="section-title projects-title">Projekty</h1>
+				<div class="slider">
+					<div class="slider-inner">
+						<div class="slider-img">
+							<img src="./img/house_with_panels3.jpg" alt="photo house with solar panels">
+						</div>
+						<div class="slider-img show">
+							<img src="./img/house_with_panels3.jpg" alt="photo house with solar panels">
+						</div>
+						<div class="slider-img">
+							<img src="./img/house_with_panels3.jpg" alt="photo house with solar panels">
+						</div>
+					</div>
+					<span class="slider-counter">1<span>/40</span></span>
+					<button class="btn-next">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M17.5628 16.0001L10.9628 22.6001L12.8482 24.4854L21.3335 16.0001L12.8482 7.51477L10.9628 9.4001L17.5628 16.0001Z" fill="white"/>
+						</svg>
+					</button>
+					<button class="btn-prev">
+						<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.4374 16.0001L21.0374 22.6001L19.1521 24.4854L10.6667 16.0001L19.1521 7.51477L21.0374 9.4001L14.4374 16.0001Z" fill="white"/>
+						</svg>
+					</button>
+				</div>
+			</div>
     </section>
   </main>
 	<footer class="footer">
