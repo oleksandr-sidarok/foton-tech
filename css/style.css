@@ -98,6 +98,7 @@ address {
 
 /* Button */
 .btn {
+  display: block;
   padding: 16px 47px;
   font-size: 14px;
   font-weight: 700px;
@@ -472,6 +473,26 @@ address {
   margin-top: 200px;
 }
 
+.gratitude {
+  background-color: #FF7129;
+  color: #fff;
+  text-align: center;
+  padding-top: 190px;
+}
+
+.gratitude::before {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 60px;
+  background-image: url("../img/icon/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .modal-close {
   position: absolute;
   top: 20px;
@@ -500,15 +521,18 @@ address {
   fill: #20242D;
 }
 
-.your-questions .modal-close svg {
+.your-questions .modal-close svg,
+.gratitude .modal-close svg {
   fill: #fff;
 }
 
-.your-questions .modal-close:hover svg {
+.your-questions .modal-close:hover svg,
+.gratitude .modal-close:hover svg {
   fill: #20242D;
 }
 
-.your-questions .modal-close:active {
+.your-questions .modal-close:active,
+.gratitude .modal-close:active {
   background-color: #fff;
 }
 
@@ -541,6 +565,7 @@ address {
 }
 
 .modal-text {
+  display: block;
   margin-bottom: 56px;
 }
 
