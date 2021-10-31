@@ -77,6 +77,13 @@ address {
   overflow: hidden;
 }
 
+.tocenter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-title {
   font-size: 92px;
   font-weight: 700;
@@ -103,6 +110,7 @@ address {
   padding: 16px 62px;
   border: 1px solid #FF7129;
   box-shadow: none;
+  font-weight: 700;
   /* What is it? */
   filter: drop-shadow(0px 4px 28px rgba(255, 113, 41, 0.67));
 }
@@ -115,6 +123,7 @@ address {
 
 .btn--primary {
   background-color: #FF7129;
+  font-weight: 700;
 }
 
 .btn--primary:hover {
@@ -124,9 +133,7 @@ address {
 .btn--secondary {
   background-color: #fff;
   color: #FF7129;
-
-  /* Remove this style in future*/
-  border: 1px solid black;
+  font-weight: 700;
 }
 
 .btn--secondary:hover {
@@ -442,6 +449,7 @@ address {
   width: 100%;
   max-width: 800px;
   transform: translate(-50%, -50%);
+  box-sizing: border-box;
   padding: 97px 58px 72px;
   background-color: #fff;
   z-index: 4;
@@ -460,6 +468,10 @@ address {
   z-index: -1;
 }
 
+.your-questions .modal-title {
+  margin-top: 200px;
+}
+
 .modal-close {
   position: absolute;
   top: 20px;
@@ -469,6 +481,7 @@ address {
   box-sizing: content-box;
   padding: 7px;
   border-radius: 50%;
+  z-index: 10;
 }
 
 .modal-close:hover svg {
@@ -487,6 +500,42 @@ address {
   fill: #20242D;
 }
 
+.your-questions .modal-close svg {
+  fill: #fff;
+}
+
+.your-questions .modal-close:hover svg {
+  fill: #20242D;
+}
+
+.your-questions .modal-close:active {
+  background-color: #fff;
+}
+
+.modal-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 72px 58px;
+  background-color: #FF7129;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-price-val {
+  font-size: 48px;
+  font-weight: 700;
+}
+
 .modal-title {
   margin-bottom: 19px;
 }
@@ -495,15 +544,43 @@ address {
   margin-bottom: 56px;
 }
 
-.modal-form .btn {
+.modal-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.input-wraper {
+  position: relative;
+  width: 49%;
+  margin-bottom: 24px;
+}
+
+.input-desc {
   display: block;
-  margin: 0 auto;
+  margin-bottom: 12px;
+  color: #7B7E85;
+  font-weight: 500;
+}
+
+.input-wraper .btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.input {
+  width: 100%;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  border: 1px solid #E0E0E0;
 }
 
 .scroll-wraper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .scroll-desc {
@@ -601,11 +678,6 @@ address {
   border: 8px solid #FF7129;
   border-radius: 50%;
   box-shadow: 0px 4px 17px rgba(255, 113, 41, 0.29);
-}
-
-.selects {
-  display: flex;
-  justify-content: space-between;
 }
 
 .select-desc {

@@ -120,7 +120,7 @@
 	</footer>
 
 	<!-- Modal windows -->
-	<div class="mask hiden"></div>
+	<div class="mask"></div>
 
 	<div class="modal calculate-the-cost hiden">
 		<button class="modal-close">
@@ -154,44 +154,49 @@
 					</div>
 				</div>
 			</div>
-			<div class="selects">
-				<div class="select-wraper">
-					<label for="select1" class="select-desc">
-						Strona świata
-					</label>
-					<select name="" id="select1" class="select">
-						<option value="Wybierz z listy">Wybierz z listy</option>
-					</select>
-				</div>
-				<div class="select-wraper">
-					<label for="select2" class="select-desc">
-						Materiał dachu
-					</label>
-					<select name="" id="select2" class="select">
-						<option value="Wybierz z listy">Wybierz z listy</option>
-						<option value="Południowy">Południowy</option>
-						<option value="Wschodni">Wschodni</option>
-						<option value="Zachodni">Zachodni</option>
-					</select>
-				</div>
+			<div class="select-wraper">
+				<label for="select1" class="select-desc">
+					Strona świata
+				</label>
+				<select name="" id="select1" class="select">
+					<option value="Wybierz z listy">Wybierz z listy</option>
+				</select>
 			</div>
-			<button type="submit" class="btn btn--primary">Obliczyć</button>
+			<div class="select-wraper">
+				<label for="select2" class="select-desc">
+					Materiał dachu
+				</label>
+				<select name="" id="select2" class="select">
+					<option value="Wybierz z listy">Wybierz z listy</option>
+					<option value="Południowy">Południowy</option>
+					<option value="Wschodni">Wschodni</option>
+					<option value="Zachodni">Zachodni</option>
+				</select>
+			</div>
+			<div class="tocenter">
+				<button type="submit" class="btn btn--primary">Obliczyć</button>
+			</div>
 		</form>
 	</div>
 	<div class="modal your-questions hiden">
+		<button class="modal-close">
+			<svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+				<path d="M6.99999 5.58599L11.95 0.635986L13.364 2.04999L8.41399 6.99999L13.364 11.95L11.95 13.364L6.99999 8.41399L2.04999 13.364L0.635986 11.95L5.58599 6.99999L0.635986 2.04999L2.04999 0.635986L6.99999 5.58599Z"/>
+			</svg>
+		</button>
 		<div class="modal-header">
 			<div class="modal-price">
-				<span>
+				<span class="modal-price-desc">
 					Przybliżony koszt:
 				</span>
-				<span>
+				<span class="modal-price-val">
 					40 000 zł
 				</span>
 			</div>
 			<button class="btn btn--secondary">Przeliczyć</button>
 		</div>
 		<h2 class="modal-title section-title">Jakieś pytania?</h2>
-		<p>Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania</p>
+		<p class="modal-text">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania</p>
 		<form action="" class="modal-form">
 			<div class="input-wraper">
 				<label for="input1" class="input-desc">Twoje imię</label>
@@ -205,7 +210,9 @@
 				<label for="input3" class="input-desc">Telefon</label>
 				<input type="text" id="input-phone" placeholder="Wprowadź telefon" class="input">
 			</div>
-			<button type="submit" class="btn btn--primary">Wysłać prośbę</button>
+			<div class="input-wraper">
+				<button type="submit" class="btn btn--primary">Wysłać prośbę</button>
+			</div>
 		</form>
 	</div>
 	<div class="modal gratitude hiden">
