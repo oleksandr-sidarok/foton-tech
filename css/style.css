@@ -143,6 +143,10 @@ address {
   color: #fff;
 }
 
+.header-inner {
+  border: 1px solid #EFF1F5;
+}
+
 .header-inner, .footer-inner {
   display: flex;
   justify-content: space-between;
