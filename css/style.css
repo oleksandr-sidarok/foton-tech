@@ -787,6 +787,7 @@ address {
   background-image: url("../img/text-contacts.png");
   background-repeat: no-repeat;
   background-position: center;
+  z-index: -1;
 }
 
 .contact-us-item {
