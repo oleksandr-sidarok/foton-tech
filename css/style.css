@@ -28,6 +28,10 @@ a {
   text-decoration: inherit;
 }
 
+p {
+  line-height: 24px;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -39,6 +43,12 @@ li {
   padding: 0;
   list-style: none;
   font: inherit;
+}
+
+hr {
+  color: #E0E0E0;
+  size: 1px;
+
 }
 
 button, select {
@@ -169,6 +179,33 @@ address {
 .btn-prev svg, .btn-next svg {
   width: 32px;
   height: 32px;
+}
+
+/* List */
+
+.list {
+  margin-top: 24px;
+}
+
+.list-item {
+  position: relative;
+  padding: 8px 60px;
+  background-color: #F2F2F2;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.list-item::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/icon/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Logo */
@@ -602,6 +639,129 @@ address {
   font-size: 16px;
   font-weight: 400;
   color: #7B7E85;
+}
+
+/* Installation */
+.installation {
+  position: relative;
+  padding: 162px 0;
+}
+
+.installation:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.installation:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 36, 45, 0.3);
+  background-image: radial-gradient(50% 179.69% at 50% 50%, rgba(32, 36, 45, 0) 0%, #20242D 100%);
+  opacity: 0.9;
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
+
+.installation-title {
+  width: 100%;
+  max-width: 700px;
+  font-size: 72px;
+  margin: 0 auto;
+  border: none;
+  padding: 0;
+  color: #fff;
+}
+
+.installation-title::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -17px;
+  display: block;
+  width: 590px;
+  height: 120px;
+  background-image: url("../img/text-foton-tech.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.installation-title::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: -28px;
+  display: block;
+  width: 550px;
+  height: 120px;
+  background-image: url("../img/text-instalacja.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.installation-content {
+  width: 100%;
+  max-width: 700px;
+  padding: 120px 0;
+}
+
+.item-title {
+  font-size: 36px;
+  margin-bottom: 32px;
+}
+
+.item-subtitle {
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.installation-item {
+  margin-bottom: 64px;
+}
+
+.installation-text {
+  margin: 24px 0;
+}
+
+.installation-text:last-child {
+  margin-bottom: 0;
+}
+
+.installation-img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hint, .hint:last-child {
+  background-color: #F5F5F5;
+  padding: 16px 24px;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 32px;
+}
+
+.hint span {
+  font-weight: 600;
+  color: #FF7129;
+}
+
+.hint--block, .hint--block:last-child {
+  font-size: 16px;
+  padding: 32px 24px;
 }
 
 /* Footer */
