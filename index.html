@@ -61,7 +61,7 @@
 				<h1 class="intro-title main-title">Panele Fotowoltaiczne</h1>
 				<p class="intro-text">Kompleksowe usługi w zakresie montażu i podłączenia paneli słonecznych.</p>
 				<div class="tocenter">
-					<button class="btn btn--primary">Obliczyć koszt</button>
+					<button class="btn btn--primary" data-showmodalid="calculate-the-cost">Obliczyć koszt</button>
 				</div>
 			</div>
 		</section>
@@ -113,7 +113,7 @@
 					</li>
 				</ul>
 			</nav>
-			<button class="btn footer-btn">Oddzwoń</button>
+			<button class="btn footer-btn" data-showmodalid="call-back-me">Oddzwoń</button>
 		</div>
 		<div class="footer-copyright">
 			<span>Polityka prywatności</span>
@@ -124,7 +124,7 @@
 	<!-- Modal windows -->
 	<div class="mask hiden"></div>
 
-	<div class="modal calculate-the-cost hiden">
+	<div class="modal calculate-the-cost hiden" id="calculate-the-cost">
 		<button class="modal-close">
 			<svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
 				<path d="M6.99999 5.58599L11.95 0.635986L13.364 2.04999L8.41399 6.99999L13.364 11.95L11.95 13.364L6.99999 8.41399L2.04999 13.364L0.635986 11.95L5.58599 6.99999L0.635986 2.04999L2.04999 0.635986L6.99999 5.58599Z"/>
@@ -132,7 +132,7 @@
 		</button>
 		<h2 class="modal-title section-title">Obliczyć koszt</h2>
 		<p class="modal-text">Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
-		<form class="modal-form">
+		<form class="modal-form" action="#">
 			<div class="scroll-wraper">
 				<span class="scroll-desc">
 					Roczne zużycie energii elektrycznej
@@ -176,11 +176,11 @@
 				</select>
 			</div>
 			<div class="tocenter">
-				<button type="submit" class="btn btn--primary">Obliczyć</button>
+				<button type="submit" class="btn btn--primary" data-showmodalid="your-questions">Obliczyć</button>
 			</div>
 		</form>
 	</div>
-	<div class="modal your-questions hiden">
+	<div class="modal your-questions hiden" id="your-questions">
 		<button class="modal-close">
 			<svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
 				<path d="M6.99999 5.58599L11.95 0.635986L13.364 2.04999L8.41399 6.99999L13.364 11.95L11.95 13.364L6.99999 8.41399L2.04999 13.364L0.635986 11.95L5.58599 6.99999L0.635986 2.04999L2.04999 0.635986L6.99999 5.58599Z"/>
@@ -195,7 +195,7 @@
 					40 000 zł
 				</span>
 			</div>
-			<button class="btn btn--secondary">Przeliczyć</button>
+			<button class="btn btn--secondary" data-showmodalid="gratitude">Przeliczyć</button>
 		</div>
 		<h2 class="modal-title section-title">Jakieś pytania?</h2>
 		<p class="modal-text">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania</p>
@@ -213,11 +213,11 @@
 				<input type="text" id="input-phone" placeholder="Wprowadź telefon" class="input">
 			</div>
 			<div class="input-wraper">
-				<button type="submit" class="btn btn--primary">Wysłać prośbę</button>
+				<button type="submit" class="btn btn--primary" data-showmodalid="gratitude">Wysłać prośbę</button>
 			</div>
 		</form>
 	</div>
-	<div class="modal gratitude hiden">
+	<div class="modal gratitude hiden" id="gratitude">
 		<button class="modal-close">
 			<svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
 				<path d="M6.99999 5.58599L11.95 0.635986L13.364 2.04999L8.41399 6.99999L13.364 11.95L11.95 13.364L6.99999 8.41399L2.04999 13.364L0.635986 11.95L5.58599 6.99999L0.635986 2.04999L2.04999 0.635986L6.99999 5.58599Z"/>
@@ -229,7 +229,7 @@
 			<button class="btn btn--secondary">Ok</button>
 		</div>
 	</div>
-	<div class="modal call-back-me hiden">
+	<div class="modal call-back-me hiden" id="call-back-me">
 		<button class="modal-close">
 			<svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
 				<path d="M6.99999 5.58599L11.95 0.635986L13.364 2.04999L8.41399 6.99999L13.364 11.95L11.95 13.364L6.99999 8.41399L2.04999 13.364L0.635986 11.95L5.58599 6.99999L0.635986 2.04999L2.04999 0.635986L6.99999 5.58599Z"/>
@@ -237,7 +237,7 @@
 		</button>
 		<h2 class="modal-title section-title">Oddzwoń</h2>
 		<p class="modal-text">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
-		<form action="" class="modal-form">
+		<form action="#" class="modal-form">
 			<div class="input-wraper">
 				<label for="input1" class="input-desc">Twoje imię</label>
 				<input type="text" id="input-name-2" placeholder="Wprowadź swoje imię" class="input">
@@ -246,8 +246,11 @@
 				<label for="input3" class="input-desc">Telefon</label>
 				<input type="text" id="input3" placeholder="Wprowadź telefon" class="input">
 			</div>
-			<button type="submit" class="btn btn--primary">Zadzwoń</button>
+			<button type="submit" class="btn btn--primary" data-showmodalid="gratitude">Zadzwoń</button>
 		</form>
 	</div>
+
+	<!-- JS -->
+	<script src="./js/main.js"></script>
 </body>
 </html>
