@@ -1,5 +1,6 @@
+let maskElement = document.querySelector('.mask')
+
 function modalShow (modalId) {
-  let maskElement = document.querySelector('.mask')
   let modalElement = document.querySelector(`#${modalId}`)
   if (modalElement) {
     modalElement.classList.remove('hiden')
@@ -8,8 +9,7 @@ function modalShow (modalId) {
   }
 }
 
-function modalHide (modalId) {
-  let maskElement = document.querySelector('.mask')
+function modalHide () {
   let modalList = document.querySelectorAll('.modal')
   modalList.forEach(element => {
     element.classList.add('hiden')
@@ -36,7 +36,6 @@ modalCloseBtns.forEach(element => {
   })
 })
 
-let maskElement = document.querySelector('.mask')
 maskElement.addEventListener('click', function () {
   modalHide()
 })
