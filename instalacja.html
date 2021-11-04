@@ -157,12 +157,144 @@
 					</li>
 				</ul>
 			</nav>
-			<button class="btn footer-btn">Oddzwoń</button>
+			<button class="btn footer-btn" data-showmodalid="call-back-me">Oddzwoń</button>
 		</div>
 		<div class="footer-copyright">
 			<span>Polityka prywatności</span>
 			<span>Ochrona danych osobowych</span>
 		</div>
 	</footer>
+
+	<!-- Modal windows -->
+	<div class="mask hiden"></div>
+
+	<div class="modal calculate-the-cost hiden" id="calculate-the-cost">
+		<button class="modal-close">
+			<svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+				<path d="M6.99999 5.58599L11.95 0.635986L13.364 2.04999L8.41399 6.99999L13.364 11.95L11.95 13.364L6.99999 8.41399L2.04999 13.364L0.635986 11.95L5.58599 6.99999L0.635986 2.04999L2.04999 0.635986L6.99999 5.58599Z"/>
+			</svg>
+		</button>
+		<h2 class="modal-title section-title">Obliczyć koszt</h2>
+		<p class="modal-text">Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
+		<form class="modal-form" action="#">
+			<div class="scroll-wraper">
+				<span class="scroll-desc">
+					Roczne zużycie energii elektrycznej
+					<div class="info">
+						<svg class="info-icon" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5 10C2.2385 10 0 7.7615 0 5C0 2.2385 2.2385 0 5 0C7.7615 0 10 2.2385 10 5C10 7.7615 7.7615 10 5 10ZM4.5 4.5V7.5H5.5V4.5H4.5ZM4.5 2.5V3.5H5.5V2.5H4.5Z"/>
+						</svg>
+						<div class="info-window">
+							<p class="info-text">
+								Istnieją trzy główne typy paneli słonecznych: monokrystaliczne krzemowe panele słoneczne, polikrystaliczne krzemowe panele słoneczne i cienkowarstwowe ogniwa słoneczne. Istnieją trzy główne typy paneli słonecznych: monokrystaliczne krzemowe panele.
+							</p>
+						</div>
+					</div>
+				</span>
+				<span class="scroll-val">
+					42 200 kWh
+				</span>
+				<div class="scroll">
+					<div class="scroll-line">
+						<button class="scroll-btn"></button>
+					</div>
+				</div>
+			</div>
+			<div class="select-wraper">
+				<label for="select1" class="select-desc">
+					Strona świata
+				</label>
+				<select name="" id="select1" class="select">
+					<option value="Wybierz z listy">Wybierz z listy</option>
+				</select>
+			</div>
+			<div class="select-wraper">
+				<label for="select2" class="select-desc">
+					Materiał dachu
+				</label>
+				<select name="" id="select2" class="select">
+					<option value="Wybierz z listy">Wybierz z listy</option>
+					<option value="Południowy">Południowy</option>
+					<option value="Wschodni">Wschodni</option>
+					<option value="Zachodni">Zachodni</option>
+				</select>
+			</div>
+			<div class="tocenter">
+				<button type="submit" class="btn btn--primary" data-showmodalid="your-questions">Obliczyć</button>
+			</div>
+		</form>
+	</div>
+	<div class="modal your-questions hiden" id="your-questions">
+		<button class="modal-close">
+			<svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+				<path d="M6.99999 5.58599L11.95 0.635986L13.364 2.04999L8.41399 6.99999L13.364 11.95L11.95 13.364L6.99999 8.41399L2.04999 13.364L0.635986 11.95L5.58599 6.99999L0.635986 2.04999L2.04999 0.635986L6.99999 5.58599Z"/>
+			</svg>
+		</button>
+		<div class="modal-header">
+			<div class="modal-price">
+				<span class="modal-price-desc">
+					Przybliżony koszt:
+				</span>
+				<span class="modal-price-val">
+					40 000 zł
+				</span>
+			</div>
+			<button class="btn btn--secondary" data-showmodalid="gratitude">Przeliczyć</button>
+		</div>
+		<h2 class="modal-title section-title">Jakieś pytania?</h2>
+		<p class="modal-text">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania</p>
+		<form action="#" class="modal-form">
+			<div class="input-wraper">
+				<label for="input1" class="input-desc">Twoje imię</label>
+				<input type="text" id="input-name" placeholder="Wprowadź swoje imię" class="input">
+			</div>
+			<div class="input-wraper">
+				<label for="input2" class="input-desc">E-mail</label>
+				<input type="text" id="input-email" placeholder="Wprowadź mail" class="input">
+			</div>
+			<div class="input-wraper">
+				<label for="input3" class="input-desc">Telefon</label>
+				<input type="text" id="input-phone" placeholder="Wprowadź telefon" class="input">
+			</div>
+			<div class="input-wraper">
+				<button type="submit" class="btn btn--primary" data-showmodalid="gratitude">Wysłać prośbę</button>
+			</div>
+		</form>
+	</div>
+	<div class="modal gratitude hiden" id="gratitude">
+		<button class="modal-close">
+			<svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+				<path d="M6.99999 5.58599L11.95 0.635986L13.364 2.04999L8.41399 6.99999L13.364 11.95L11.95 13.364L6.99999 8.41399L2.04999 13.364L0.635986 11.95L5.58599 6.99999L0.635986 2.04999L2.04999 0.635986L6.99999 5.58599Z"/>
+			</svg>
+		</button>
+		<h2 class="modal-title section-title">Dziękuję za twoją prośbę</h2>
+		<span class="modal-text">Nasz menedżer wkrótce się z Tobą skontaktuje</span>
+		<div class="tocenter">
+			<button class="btn btn--secondary">Ok</button>
+		</div>
+	</div>
+	<div class="modal call-back-me hiden" id="call-back-me">
+		<button class="modal-close">
+			<svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+				<path d="M6.99999 5.58599L11.95 0.635986L13.364 2.04999L8.41399 6.99999L13.364 11.95L11.95 13.364L6.99999 8.41399L2.04999 13.364L0.635986 11.95L5.58599 6.99999L0.635986 2.04999L2.04999 0.635986L6.99999 5.58599Z"/>
+			</svg>
+		</button>
+		<h2 class="modal-title section-title">Oddzwoń</h2>
+		<p class="modal-text">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
+		<form action="#" class="modal-form">
+			<div class="input-wraper">
+				<label for="input1" class="input-desc">Twoje imię</label>
+				<input type="text" id="input-name-2" placeholder="Wprowadź swoje imię" class="input">
+			</div>
+			<div class="input-wraper">
+				<label for="input3" class="input-desc">Telefon</label>
+				<input type="text" id="input3" placeholder="Wprowadź telefon" class="input">
+			</div>
+			<button type="submit" class="btn btn--primary" data-showmodalid="gratitude">Zadzwoń</button>
+		</form>
+	</div>
+
+	<!-- JS -->
+	<script src="./js/main.js"></script>
 </body>
 </html>
